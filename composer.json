@@ -1,0 +1,36 @@
+{
+	"name": "nadyita/reactdb",
+	"authors": [
+		{
+			"name": "Mark Reidel",
+			"email": "nadyita@hodorraid.org",
+			"role": "Developer"
+		}
+	],
+	"description": "A wrapper around MySQL and SQLite to have common interfaces",
+	"type": "library",
+	"keywords": ["react", "database"],
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"Nadyita\\ReactDB\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Nadyita\\ReactDB\\Tests\\": "tests/"
+		}
+	},
+	"require": {
+		"php": ">=7.3.0",
+		"clue/reactphp-sqlite": "^1.0.1",
+		"react/mysql": "^0.5.4",
+		"react/event-loop": "^1.1"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^8"
+	},
+	"scripts": {
+	  "test": "./vendor/bin/phpunit --testdox -c phpunit.xml --testsuite all"
+	}
+}
